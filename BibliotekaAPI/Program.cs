@@ -12,8 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IBibliotekaRepository, BibliotekaRepository>();
-builder.Services.AddScoped<IRabbitMqSender, RabbitMqSender>();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IRadniciRepository, RadniciRepository>();
+builder.Services.AddScoped<IKnjigeRepository, KnjigeRepository>();
 builder.Services.AddDbContext<BibliotekaContext>(options =>
 {
     var connectionString = "Server=localhost;Database=BibliotekaAPI;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=False";

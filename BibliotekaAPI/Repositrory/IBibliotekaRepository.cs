@@ -13,8 +13,8 @@ namespace BibliotekaAPI.Repositrory
 
         void DeleteBiblioteka(Biblioteka biblioteka);
 
-        Task UpdateBibliotekaAsync(Biblioteka currentBiblioteka, BibliotekaForUpdate newBiblioteka);
+        void Update(Biblioteka biblioteka);
 
-        
+
     }
 }

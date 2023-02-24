@@ -1,4 +1,6 @@
-﻿using System.IO.Pipelines;
+﻿using AutoMapper;
+using BibliotekaAPI.Data;
+using System.IO.Pipelines;
 
 namespace BibliotekaAPI.Profiles
 {
